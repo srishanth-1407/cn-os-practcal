@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OS &amp; CN Practicals Master Lab | CBIT Exam Suite</title>
+  <meta name="description" content="Complete Operating Systems (22CSC18N) and Computer Networks (22ITC11N) Practical Exam Preparation Suite. Complete with Aim, Theory, Algorithm, Optimized Code, Outputs, Live Interactive Algorithm Runner, and Viva Voce.">
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Application Top Navigation Bar -->
+  <header class="app-header">
+    <div class="brand-wrapper" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+      <div class="brand-logo">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="brand-text">
+        <h1>OS &amp; CN Practicals Lab</h1>
+        <span>CBIT Autonomous R22A &bull; Exam Master</span>
+      </div>
+    </div>
+
+    <!-- Center Subject Selector Pills -->
+    <div class="header-center">
+      <div class="subject-pills">
+        <button id="btn-subject-os" class="subject-btn active">
+          <i class="fas fa-microchip"></i> OS Lab (22CSC18N)
+        </button>
+        <button id="btn-subject-cn" class="subject-btn">
+          <i class="fas fa-network-wired"></i> CN Lab (22ITC11N)
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Search, Theme & Actions -->
+    <div class="header-right">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="global-search-input" class="search-input" placeholder="Search experiments (Press '/')">
+      </div>
+      <button id="theme-toggle-btn" class="icon-btn" title="Toggle Dark/Light Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="icon-btn" title="Print Cheat Sheet" onclick="window.print()">
+        <i class="fas fa-print"></i>
+      </button>
+      <a href="https://github.com" target="_blank" class="icon-btn" title="GitHub Repository">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Application Layout -->
+  <div class="app-layout">
+    
+    <!-- Left Navigation Sidebar -->
+    <aside class="app-sidebar" id="app-sidebar">
+      <div class="sidebar-section-header">
+        <span id="sidebar-subject-title">Operating Systems Lab (22CSC18N)</span>
+        <i class="fas fa-book"></i>
+      </div>
+      <ul class="experiment-nav-list" id="sidebar-nav-list">
+        <!-- Rendered dynamically by app.js -->
+      </ul>
+    </aside>
+
+    <!-- Main Content Reader Area -->
+    <main class="app-content">
+      
+      <!-- Practical Exam Top Tips Banner -->
+      <div class="banner-tips">
+        <div class="banner-icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <div class="banner-content">
+          <h4>Practical Exam Day Quick Tips</h4>
+          <p>Each experiment below has been verified and optimized according to the CBIT R22A syllabus. Use the <strong>"Run Algorithm"</strong> tab to test and experiment with custom inputs right in your browser. All code snippets include line-by-line comments ready for viva voce!</p>
+        </div>
+      </div>
+
+      <!-- Active Experiment Content Container -->
+      <section id="main-experiment-container">
+        <!-- Populated dynamically by app.js -->
+      </section>
+
+    </main>
+  </div>
+
+  <!-- JavaScript Datasets & Logic Modules -->
+  <script src="data-os.js"></script>
+  <script src="data-cn.js"></script>
+  <script src="simulators.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
